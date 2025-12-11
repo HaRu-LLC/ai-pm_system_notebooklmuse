@@ -1,0 +1,8 @@
+{
+  "agents": [
+    "Planner Agent",
+    "Communicator Agent",
+    "Example Agent",
+    "Critic Agent"
+  ]
+}
