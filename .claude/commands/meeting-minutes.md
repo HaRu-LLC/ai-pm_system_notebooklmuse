@@ -171,12 +171,12 @@ description: 会議議事録を生成
 
 ```bash
 # 過去の議事録から類似課題の対応策を検索
-python3 tools/notebooklm/scripts/run.py ask_question.py \
+python3 .agent/skills/business/notebooklm/scripts/run.py ask_question.py \
   --question "過去に同様のリスク'{RiskEvent}'が発生したことはあるか？その時の対応策は？" \
   --notebook-id "全体管理"
 
 # 特定の決定事項の経緯を追跡
-python3 tools/notebooklm/scripts/run.py ask_question.py \
+python3 .agent/skills/business/notebooklm/scripts/run.py ask_question.py \
   --question "'{Decision}'という決定に至った背景と根拠を教えてください" \
   --notebook-id "会議議事録"
 ```

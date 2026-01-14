@@ -8,7 +8,7 @@ description: NotebookLMへのクエリ実行ワークフロー
 
 ## 前提条件
 -   Python環境がセットアップされていること。
--   `tools/notebooklm/scripts/run.py` および `ask_question.py` が存在すること。
+-   `.agent/skills/business/notebooklm/scripts/run.py` および `ask_question.py` が存在すること。
 -   NotebookLMの認証情報が設定されていること。
 
 ## 手順
@@ -20,7 +20,7 @@ description: NotebookLMへのクエリ実行ワークフロー
 2.  **コマンド実行**
     -   以下のコマンド形式で実行します。
     ```bash
-    python3 tools/notebooklm/scripts/run.py ask_question.py --question "{質問内容}" --notebook-id "{NotebookID}"
+    python3 .agent/skills/business/notebooklm/scripts/run.py ask_question.py --question "{質問内容}" --notebook-id "{NotebookID}"
     ```
 
 3.  **結果の確認**
@@ -30,7 +30,7 @@ description: NotebookLMへのクエリ実行ワークフロー
 ## 使用例
 ```bash
 # プロジェクトの課題抽出（例）
-python3 tools/notebooklm/scripts/run.py ask_question.py \
+python3 .agent/skills/business/notebooklm/scripts/run.py ask_question.py \
   --question "現在のプロジェクトにおける主要な課題を3つ挙げ、優先順位を付けてください" \
   --notebook-id "{TargetNotebookID}"
 ```

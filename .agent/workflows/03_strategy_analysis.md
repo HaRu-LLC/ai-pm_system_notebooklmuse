@@ -10,7 +10,7 @@ description: 戦略分析を実施するワークフロー (情報収集 -> 分�
 
 1.  **情報収集**
     -   NotebookLMから分析テーマに関連する情報を取得します。
-    -   コマンド: `python3 tools/notebooklm/scripts/run.py ask_question.py ...` を使用して、必要なコンテキストを抽出します。
+    -   コマンド: `python3 .agent/skills/business/notebooklm/scripts/run.py ask_question.py ...` を使用して、必要なコンテキストを抽出します。
 
 2.  **分析実施**
     -   収集した情報を基に、適切なフレームワーク（3C, SWOT, 5Forces, PESTLE等）を選択・適用して分析を行います。
@@ -22,7 +22,7 @@ description: 戦略分析を実施するワークフロー (情報収集 -> 分�
 
 4.  **保存**
     -   作成したレポートを以下のパスに保存します。
-    -   パス: `/{ProjectName}/docs/reports/YYYYmmdd_{分析テーマ}.md`
+    -   パス: `workspace/{ProjectName}/docs/reports/YYYYmmdd_{分析テーマ}.md`
     -   ファイル名は日付とテーマを含めた形式にします（例: `20251120_市場参入戦略.md`）。
 
 ## 実行例

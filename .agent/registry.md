@@ -11,6 +11,7 @@ Skills と Workflows の対応表。どのSkillがどのWorkflowに対応する�
 | skills-creator | （メタSkill） | `.agent/skills/meta/skills-creator/` |
 | template-miner | `/05_meta_bootstrap_template_library` | `.agent/skills/meta/template-miner/` |
 | doc-from-examples | `/05_meta_doc_from_examples` | `.agent/skills/business/doc-from-examples/` |
+| notebooklm | （外部ツール連携） | `.agent/skills/business/notebooklm/` |
 | privacy-email-review | `/05_meta_privacy_review_email` | `.agent/skills/pm/privacy-email-review/` |
 | diagnostic-site-no-logs | `/05_meta_build_diagnostic_site` | `.agent/skills/engineering/diagnostic-site/` |
 | sim-game-builder-email | `/05_meta_build_simulation_game` | `.agent/skills/engineering/simulation-game/` |
@@ -36,8 +37,9 @@ Skills と Workflows の対応表。どのSkillがどのWorkflowに対応する�
 ## カテゴリ別 Skills一覧
 
 ### business/
-*ビジネス文書作成・経営支援*
+*ビジネス文書作成・経営支援・ナレッジ管理*
 - **doc-from-examples** - 過去資料の「型」に合わせて新規ビジネス文書を作成
+- **notebooklm** - Google NotebookLMをナレッジベースとして活用、ソースグラウンド回答取得
 
 ### pm/
 *プロジェクト管理・リスク管理*
@@ -83,6 +85,7 @@ Skills と Workflows の対応表。どのSkillがどのWorkflowに対応する�
 
 | 日付 | 更新内容 |
 |------|----------|
+| 2026-01-14 | **notebooklm** 移植（business: tools/notebooklmから.agent/skillsへ移動） |
 | 2026-01-14 | **workflow-designer** 追加（meta: ワークフロー設計メタスキル） |
 | 2026-01-14 | awesome-claude-skillsから14スキル追加（docx, pdf, pptx, xlsx, playwright, TDD, debugging等） |
 | 2026-01-14 | **codex-cli** 追加（engineering: Codex CLI連携、オーケストレーターループ対応） |

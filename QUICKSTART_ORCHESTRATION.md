@@ -275,7 +275,7 @@ Claude: 「プロジェクトXXXの立ち上げが完了しました」
    - `.agent/ORCHESTRATION_GUIDE.md` にプロジェクト固有のルールを追加
 
 3. **NotebookLM連携**
-   - NotebookLMを設定して、過去ドキュメントからの自動情報取得を実現（Codex/Geminiは `tools/notebooklm` のPythonスクリプトを直接実行。ネットワーク/ブラウザ許可が必要）
+   - NotebookLMを設定して、過去ドキュメントからの自動情報取得を実現（Codex/Geminiは `.agent/skills/business/notebooklm` のPythonスクリプトを直接実行。ネットワーク/ブラウザ許可が必要）
    - 週次レポート作成時に全ノートブックから自動的に情報収集
 
 ---

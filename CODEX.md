@@ -17,13 +17,13 @@
 - サンドボックス/ネットワーク制限がある場合は、実行可否をユーザーに確認してからコマンドを走らせる。
 
 ## NotebookLM連携（オプション・ネットワーク必須）
-`tools/notebooklm` はClaude Code Skill由来のブラウザ自動化スクリプト群です。Codexから利用する場合はPythonスクリプトを直接呼び出します。
+`.agent/skills/business/notebooklm` はClaude Code Skill由来のブラウザ自動化スクリプト群です。Codexから利用する場合はPythonスクリプトを直接呼び出します。
 - 事前準備（ネットワークとChrome導入が必要）:
-  1. `cd tools/notebooklm`
+  1. `cd .agent/skills/business/notebooklm`
   2. `python scripts/setup_environment.py` （.venv作成・依存/Chromeインストールを自動実行）
   3. 認証: `python scripts/auth_manager.py setup` でブラウザが開くのでGoogleアカウントでNotebookLMにログイン
 - クエリ実行の例:
-  - 単票照会: `python scripts/ask_question.py --notebook-url "<共有URL>" --question "<質問>"`  
+  - 単票照会: `python scripts/ask_question.py --notebook-url "<共有URL>" --question "<質問>"`
   - 複数ノート: `python scripts/ask_multiple.py --library-file data/library.json --question "<質問>"`
 - 注意: ブラウザ自動化のためネットワーク/GUIアクセスが必要。`data/` 配下に認証情報が保存されるのでGitコミット禁止（.gitignore済み）。
 

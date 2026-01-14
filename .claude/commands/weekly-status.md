@@ -22,12 +22,12 @@ description: 週次統合ステータスレポートを生成
 
 ```bash
 # ステップ1: 全ノートブックから今週の状況を収集
-python3 tools/notebooklm/scripts/run.py ask_multiple.py \
+python3 .agent/skills/business/notebooklm/scripts/run.py ask_multiple.py \
   --question "今週（YYYY-MM-DD～YYYY-MM-DD）の主要な進捗、課題、リスクを簡潔に報告してください" \
   --all-notebooks
 
 # ステップ2: 全体管理ノートブックから横断リスクを確認
-python3 tools/notebooklm/scripts/run.py ask_question.py \
+python3 .agent/skills/business/notebooklm/scripts/run.py ask_question.py \
   --question "横断依存の変化、統合リスクの状況、全体KPIの実績を報告してください" \
   --notebook-id "全体管理"
 ```
