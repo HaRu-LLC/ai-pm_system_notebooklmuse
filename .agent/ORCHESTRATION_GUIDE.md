@@ -314,4 +314,38 @@ Claudeがオーケストレーターとして機能しているか確認：
 
 ---
 
+## 11. 3-Step Orchestration Framework
+
+Skills-First Orchestrator の実行フレームワーク。
+
+### Step 1: Goal Clarification (Plan Mode)
+- 目的と成功基準を明確化
+- ユーザーと合意
+
+### Step 2: Plan Creation (Plan Mode)
+- Skills 選定（→ `.agent/docs/skills-selection-matrix.md`）
+- 実行順序設計
+
+### Step 3: Execution Loop
+- `while (goal not achieved && attempts < 10)`
+- Skills 実行 → 評価 → 次のアクション
+
+詳細: `.agent/docs/3-step-framework.md`
+
+---
+
+## 12. Skills Selection
+
+| タスク | Skill |
+|-------|-------|
+| コード生成 | `codex-cli` |
+| ドキュメント | `docx`, `pptx`, `pdf`, `xlsx` |
+| テスト | `test-driven-development` |
+| デバッグ | `systematic-debugging` |
+| PM | `project-charter`, `requirements`, `risk-register` |
+
+詳細: `.agent/docs/skills-selection-matrix.md`
+
+---
+
 このガイドに従うことで、Claudeは真のオーケストレーターとして、プロジェクトマネジメントを自律的に支援できます。
